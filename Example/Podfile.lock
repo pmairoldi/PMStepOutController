@@ -1,0 +1,14 @@
+PODS:
+  - PMStepOutController (0.0.1)
+
+DEPENDENCIES:
+  - PMStepOutController (from `../`)
+
+EXTERNAL SOURCES:
+  PMStepOutController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  PMStepOutController: faccd42069de90cb08e789d7b35a9fe30cc78245
+
+COCOAPODS: 0.33.1
