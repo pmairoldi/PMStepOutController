@@ -15,5 +15,6 @@
 -(instancetype)initWithView:(UIView *)view;
 
 +(UIView *)copyView:(UIView *)view;
+-(void)setViewTransitionBlock:(void (^)(UIView *view))viewTransitionBlock;
 
 @end

@@ -93,6 +93,21 @@
     
     PMStepOutController *controller = [[PMStepOutController alloc] initWithView:cell];
     
+    [controller setViewTransitionBlock:^(UIView *view) {
+
+        view.layer.borderColor = [UIColor blackColor].CGColor;
+        view.layer.borderWidth = 4;
+        
+        CABasicAnimation *color = [CABasicAnimation animationWithKeyPath:@"borderColor"];
+        color.fromValue = (id)[UIColor blackColor].CGColor;
+        color.toValue   = (id)[UIColor whiteColor].CGColor;
+        color.fillMode = kCAFillModeForwards;
+        color.removedOnCompletion = NO;
+        color.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+        
+        [view.layer addAnimation:color forKey:@"color"];
+    }];
+    
     [self.navigationController presentViewController:controller animated:YES completion:nil];
     
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];

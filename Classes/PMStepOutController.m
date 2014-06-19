@@ -18,6 +18,7 @@
 @interface PMStepOutController ()
 
 @property UITapGestureRecognizer *tapGesture;
+@property (nonatomic, copy) void (^viewTransitionBlock)(UIView *view);
 
 @end
 
@@ -36,6 +37,8 @@
         self.transitioningDelegate = self;
         self.modalPresentationStyle = UIModalPresentationCustom;
         self.modalPresentationCapturesStatusBarAppearance = YES;
+        
+        _viewTransitionBlock = nil;
     }
     
     return self;
@@ -76,9 +79,13 @@
     [self.view addSubview:_presentedView];
 }
 
--(void)viewDidAppear:(BOOL)animated {
+-(void)viewWillAppear:(BOOL)animated {
     
     [super viewDidAppear:animated];
+    
+    if (_viewTransitionBlock != nil) {
+        _viewTransitionBlock(_presentedView);
+    }
 }
 
 #pragma Status Bar Methods
@@ -125,6 +132,13 @@
     
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma Block Properties
+
+-(void)setViewTransitionBlock:(void (^)(UIView *view))viewTransitionBlock {
+
+    _viewTransitionBlock = viewTransitionBlock;
 }
 
 @end
