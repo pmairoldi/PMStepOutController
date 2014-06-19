@@ -6,9 +6,9 @@
 #
 Pod::Spec.new do |s|
   s.name             = "PMStepOutController"
-  s.version          = "0.0.3"
+  s.version          = "0.0.4"
   s.summary          = "Animate a UIView subclass with a step out animation like in tweetbot 3."
-  s.homepage         = "http://pierremarcairoldi.com"
+  s.homepage         = "https://github.com/petester42/PMStepOutController"
   #s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Pierre-Marc Airoldi" => "pierremarcairoldi@gmail.com" }
