@@ -10,5 +10,11 @@
 #define COCOAPODS_POD_AVAILABLE_PMStepOutController
 #define COCOAPODS_VERSION_MAJOR_PMStepOutController 0
 #define COCOAPODS_VERSION_MINOR_PMStepOutController 0
-#define COCOAPODS_VERSION_PATCH_PMStepOutController 1
+#define COCOAPODS_VERSION_PATCH_PMStepOutController 3
+
+// UIView+Copy
+#define COCOAPODS_POD_AVAILABLE_UIView_Copy
+#define COCOAPODS_VERSION_MAJOR_UIView_Copy 0
+#define COCOAPODS_VERSION_MINOR_UIView_Copy 0
+#define COCOAPODS_VERSION_PATCH_UIView_Copy 2
 

@@ -1,5 +1,7 @@
 PODS:
-  - PMStepOutController (0.0.1)
+  - PMStepOutController (0.0.3):
+    - UIView+Copy
+  - UIView+Copy (0.0.2)
 
 DEPENDENCIES:
   - PMStepOutController (from `../`)
@@ -9,6 +11,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  PMStepOutController: faccd42069de90cb08e789d7b35a9fe30cc78245
+  PMStepOutController: 490560bddf628135c06ceead36f8ab72f7181ae3
+  UIView+Copy: ffd06576f27e9b4c065b8cfe4a48af2b77ce5c38
 
 COCOAPODS: 0.33.1

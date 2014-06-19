@@ -13,7 +13,7 @@
 
 #import "PMStepOutController.h"
 #import "PMStepOutTransition.h"
-#import <objc/runtime.h>
+#import <UIView+Copy/UIView+Copy.h>
 
 @interface PMStepOutController ()
 
@@ -118,25 +118,7 @@
 #pragma Copy View Methods
 +(UIView *)copyView:(UIView *)originalView {
     
-    [self setHighlighted:originalView];
-    
-    NSData *tempArchivedView = [NSKeyedArchiver archivedDataWithRootObject:originalView];
-    
-    UIView *copiedView = [NSKeyedUnarchiver unarchiveObjectWithData:tempArchivedView];
-    
-    return copiedView;
-}
-
-+(void)setHighlighted:(UIView *)view {
-    
-    if (class_getProperty([view class], [@"highlighted" UTF8String]) != NULL) {
-        [view setValue:@(0) forKey:@"highlighted"];
-    }
-    
-    for (UIView *subview in view.subviews) {
-        
-        [self setHighlighted:subview];
-    }
+    return [originalView pm_copy];
 }
 
 - (void)didReceiveMemoryWarning {

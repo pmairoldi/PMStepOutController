@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = "PMStepOutController"
-  s.version          = "0.0.2"
+  s.version          = "0.0.3"
   s.summary          = "Animate a UIView subclass with a step out animation like in tweetbot 3."
   s.homepage         = "http://pierremarcairoldi.com"
   #s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
@@ -21,6 +21,8 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Classes'
   #s.resources = 'Assets/*.png'
+
+  s.dependency 'UIView+Copy'
 
   # s.public_header_files = 'Classes/**/*.h'
   # s.frameworks = 'SomeFramework', 'AnotherFramework'

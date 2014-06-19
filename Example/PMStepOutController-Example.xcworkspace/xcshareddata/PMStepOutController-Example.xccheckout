@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>016CFA99-A550-4DFD-AFAD-5627A9558AAA</string>
+	<string>4325FDCC-92C1-4E49-9E22-0D0644808710</string>
 	<key>IDESourceControlProjectName</key>
 	<string>PMStepOutController-Example</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>8C160FE5-E309-478C-B79C-822823FE471E</key>
+		<key>AAC3B8CC-D2E7-4CDD-A5CB-F910D2708B0C</key>
 		<string>https://github.com/petester42/PMStepOutController.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Example/PMStepOutController-Example.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>8C160FE5-E309-478C-B79C-822823FE471E</key>
+		<key>AAC3B8CC-D2E7-4CDD-A5CB-F910D2708B0C</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>8C160FE5-E309-478C-B79C-822823FE471E</string>
+	<string>AAC3B8CC-D2E7-4CDD-A5CB-F910D2708B0C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>8C160FE5-E309-478C-B79C-822823FE471E</string>
+			<string>AAC3B8CC-D2E7-4CDD-A5CB-F910D2708B0C</string>
 			<key>IDESourceControlWCCName</key>
 			<string>PMStepOutController</string>
 		</dict>
