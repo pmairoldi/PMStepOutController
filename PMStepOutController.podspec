@@ -7,15 +7,9 @@
 Pod::Spec.new do |s|
   s.name             = "PMStepOutController"
   s.version          = "0.0.1"
-  s.summary          = "A short description of PMStepOutController."
-  s.description      = <<-DESC
-                       An optional longer description of PMStepOutController
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
+  s.summary          = "Animate a UIView subclass with a step out animation like in tweetbot 3."
   s.homepage         = "http://pierremarcairoldi.com"
-  s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  #s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Pierre-Marc Airoldi" => "pierremarcairoldi@gmail.com" }
   s.source           = { :git => "https://github.com/petester42/PMStepOutController.git", :tag => s.version.to_s }
