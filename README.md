@@ -8,6 +8,15 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+	#import <PMStepOutController/PMStepOutController.h>
+
+	//any UView or UIView subclass will work. Here is an example of a UICollectionViewCell
+	UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+    
+    PMStepOutController *controller = [[PMStepOutController alloc] initWithView:cell];
+    
+    [self.navigationController presentViewController:controller animated:YES completion:nil];
+
 ## Requirements
 
 ## Installation
@@ -24,4 +33,3 @@ Pierre-Marc Airoldi, pierremarcairoldi@gmail.com
 ## License
 
 PMStepOutController is available under the MIT license. See the LICENSE file for more info.
-
